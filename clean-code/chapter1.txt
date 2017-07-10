@@ -1,1 +1,13 @@
+- We are deeply complicit and share a great deal of responsibility.
 
+- They may defend the schedule and requirements with passion, that's their job. It's your job to defend the
+code with equal passion.
+
+- It is unprofessional for programmers to bend to the will of managers who don't understand the risks of messes
+(created in code by their request).
+
+- When hand washing was first recommended ty physicians, it was rejected on the basis that doctors were too busy
+and wouldn't have time to wash their hands between patient visits.
+
+- The time spent reading vs. writing is well over 10:1. We are constantly reading old code as part of the effort
+to write new code. You cannot write code if you cannot read the surrounding code.
