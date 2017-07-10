@@ -1,1 +1,32 @@
+Simple Rules for Creating Good Names
 
+- use intention-revealing names 
+  -- a name should answer all the big questions: why it exists, what it does, how it's used
+  -- choose a name that specifies what is being measured and the unit of measurement
+  
+- avoid disinformation
+  -- as an example, do not refer to a grouping of accounts as an accountList unless it's actually a List data type,
+  instead prefer accountGroups or accounts. Even if it is a List the latter is still better
+
+- make meaningful distinctions
+  -- if names must be different, then they should mean something different as well
+  
+- use pronouncable names
+  -- programming is a social activity, so use names you can pronounce so that you can talk about them easily
+  
+- use searchable names
+  -- single letter names are not easy to locate across a body of text, use them only as local variables inside
+  short methods
+  -- the length of a name should correspond to the size of its scope
+
+- avoid encoding
+  -- encoding type or scope information into names simply adds an extra burden of deciphering
+  
+-- avoid mental mappings
+  -- reader's shouldn't have to mentally translate your names into other names they already know. This problem
+  generally arises from a choice to use neither problem domain terms nor solution domain terms
+  -- one difference between smart programmers and professional programmers is that the professionals understand
+  that clarity is king
+  
+- pick one word per concept
+  -- it's confusing to have fetch, retrieve, and get as equivalent methods of different classes
