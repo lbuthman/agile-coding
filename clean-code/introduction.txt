@@ -1,1 +1,3 @@
-
+- There are two parts to craftsmanship: knowledge and work.
+  -> knowledge of principles, patterns, practices, and heuristics that a craftsman knows
+  -> work to grind that knowledge into your fingers, eyes, and gut
