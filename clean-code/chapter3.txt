@@ -21,3 +21,28 @@ Rules for Functions
 - switch statements
   -- bury each switch statement in a low level class so that it is never repeated
   -- to do this, use an Abstract Factory Pattern that hides the switch behind inheritance
+
+- use descriptive names
+  -- "You know you are working on clean code when each routine turns out to be pretty much what you expected."
+  -- a long descriptive name is better than a short enigmatic one
+  
+- function arguments
+  -- zero is best, then one, followed closely by two, more than that needs to be justified but maybe not used
+  at all
+  -- arguments require interpretation by the reader
+  -- more challenging for testing, each additional argument can create many variations to test
+  
+- common monadic forms
+  1) ask a question about the argument
+  2) transforming it is returning the transformed object
+  3) an event, that alters the system state but doesn't return anything
+  -- try to avoid monadic functions that don't follow these forms. Using an output argument instead of a return
+  value for a transformation is confusing
+  
+- flag argument
+  -- passing a boolean into a function is a bad practice because this funciton can now do one of two things, one
+  if true and one if false
+  -- split the function, one for each case
+  
+- dyadic functions
+  -- the parts of code we ignore are the parts where bugs hide
