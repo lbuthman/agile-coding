@@ -46,3 +46,39 @@ Rules for Functions
   
 - dyadic functions
   -- the parts of code we ignore are the parts where bugs hide
+
+-triad functions
+  -- reducing the number of arguments by creating objects out of them may seem like cheating, but it's not. When
+  groups of variables are passed together, it's likely they are part of a concept that deserves a name of its own.
+
+- verbs and keywords
+  -- assertEquals would be better as assertExpectedEqualsActual(expected, actual)
+  
+- output arguments
+  -- any name that forces you to check the function signature is equivalent to a double-take. It's a cognitive
+  break and should be avoided.
+  -- the input parameter shouldn't become the output. The "this" keyword is intended to act as an output argument
+  (in the book's example becoming a function of the object)
+  -- if your function must change the state of something, have it change the state of its own object
+
+- command query separation
+  -- functions should either do something or answer something, but not both
+  
+- prefer exceptions to returning error codes
+
+- extract try/catch blocks
+  -- it is better to extract the bodies of try/catch blocks out into functions of their own
+  
+- error handling is one thing
+  -- a function that handles errors should do nothing else. This implies that if the keyword try exists in a function,
+  it should be the first word and there should be nothing after the catch/finally blocks
+  
+- the single-entry, single-exit rule makes sense when using large functions, but if small functions are preferred,
+continue, break, and multiple returns can be expressive, understandable, simple and therefore permissible
+
+- importance of the rewrite
+  -- just like crafting a paper, the first version is about getting ideas on paper. Coupled with unit tests, the
+  editing/rewrite process can follow the first draft, ensuring the code still works while making it clean
+
+- the art of programming is, and has always been the art of language design. Functions are verbs, classes are nouns.
+And Master programmers think of systems as stories to be told rather than programs to be written.
