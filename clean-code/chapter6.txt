@@ -1,1 +1,8 @@
+- hiding implementation is about abstraction. A class does not simply push its variables out through getters and setters,
+rather, it exposes abstract interfaces that allow its uses to manipulate the essence of the data without knowning its
+implementation
 
+- we do not want to expose the details of our data
+
+- objects hide their data behind abstractions and expose functions that operate on that data. Data structures expose their
+data and have no meaningful functions
