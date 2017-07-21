@@ -1,1 +1,9 @@
+- comments are failures, failures to express ourselves in code
 
+- programmers can't realistically maintain comments, thus falling into a state of disinformation
+
+- rather than spend time explaining cluttered and complex code, explaining the mess you made, spend the time cleaning it
+
+- in many cases, it's as simple as creating a function that says what you would say in a comment
+
+- a useful comment can explain the intent of the function
