@@ -6,3 +6,17 @@ implementation
 
 - objects hide their data behind abstractions and expose functions that operate on that data. Data structures expose their
 data and have no meaningful functions
+
+- Law of Demeter -> a method f() of a class C should only call
+  1) methods of C
+  2) an object created by f()
+  3) an object passed as an argument to f()
+  4) an object held in an instance variable of C
+
+- DTO -> Data Transfer Object
+  - a quintessential form of a data structure, a class with public variables and no functions
+  - very useful when communicating with databases or parsing messages from sockets
+
+- Active Records
+  - special forms of DTOs, they have public variables and navigational methods like save() and find()
+  - be careful of adding Business Rules to these objects as it is not appropriate
